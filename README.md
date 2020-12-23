@@ -96,7 +96,7 @@ docker/postgres/data/config:/data/config:ro
 ```
 
 The volumes list example file about will mount `~project/docker/postgres/data` from the host machine
-into the container at `/var/lib/postgresql/data` and make it writable inside the container using the cached stategy.
+into the container at `/var/lib/postgresql/data` and make it writable inside the container using the cached strategy.
 `~project/docker/data/config` will be mounted inside the container at `/data/config` as read-only.
 
 If you want use the same volumes.list file across multiple docker environments, just call the file `volumes.list`. Beware! `volumes.list` _**will**_ be considered if there exist an environment specific `.volumes.list` file e.g. `development.volumes.list` but the environment specific file will take precedence.
@@ -140,7 +140,7 @@ definition inside it, and will use them for configuration and possible forwardin
 | :--------------------- | :----------------------- | :---------- |
 | `PROJECT_PATH`         | `""`                     | The variable controls what the docker executable considers the root path of the project, all relative paths interpreted of this tool will resolve them from the the root path. |
 | `DOCKER_PROJECT`       | `$PROJECT_PATH`          | Overrides `PROJECT_PATH` either `DOCKER_PROJECT` or `PROJECT_PATH` must have a value. |
-| `DOCKER_ENVIRONMENT`   | `development`            | The environment to run the containers in (which Dockerfiles to build an run). |
+| `DOCKER_ENVIRONMENT`   | `development`            | The environment to run the containers in (which Dockerfiles to build and run). |
 | `DOCKER_ENV_PREFIXES`  | `""`                     | Which environment variable prefixes to consider for output in `docker.sh env` e.g. `APP_`. |
 | `DOCKER_HOSTS_MAP`     | `""`                     | Map of friendly hosts and ip addresses that should be accessible to containers defining the names in their hosts.list files. E.g. DOCKER_HOSTS_MAP=( nginx 10.0.0.2 redis '$REDIS_HOST' ) the redis host will be interpreted upon invocation. |
 | `DOCKER_SERVICES_PATH` | `$DOCKER_PROJECT/docker` | The path where all docker services/container definition directories live. |
