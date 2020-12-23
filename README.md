@@ -38,7 +38,7 @@ In development and test environment we mount our code inside the containers and 
 
 Development docker files are called development.Dockerfile and production docker files are called production.Dockerfile.
 
-By default all docker containers/services are located inside a the docker directory of the project root each service/container in their own directory. This behavior can be modified by setting the `DOCKER_SERVICES_PATH` environment variable. See the [configuration](#Configuration) section for more information.
+By default all docker containers/services are located inside a the docker directory of the project root each service/container in their own directory. This behavior can be modified by setting the `DOCKER_SERVICES_PATH` environment variable. See the [configuration](#configuration) section for more information.
 
 ## Environment .list files
 
@@ -106,7 +106,7 @@ _Empty lines are ignored, and lines starting with `#` are discarded and consider
 ## Hosts .list files
 
 The hosts list files are used for granting access to additional IPs outside the docker network,
-and give the hosts a friendly name inside the container. See `DOCKER_HOSTS_MAP` in the [Configuration](#Configuration) section for more information.
+and give the hosts a friendly name inside the container. See `DOCKER_HOSTS_MAP` in the [Configuration](#configuration) section for more information.
 
 List the friendly names from the `DOCKER_HOSTS_MAP` environment variable you want accessible in the container in the .list file.
 
@@ -134,7 +134,7 @@ _Empty lines are ignored, and lines starting with `#` are discarded and consider
 ## Configuration
 
 This tool will look for a .env file in the project root, and interpret the environment variable
-definition inside it, and will use them for configuration and possible forwarding the values to containers via their respective [`env.list`](#Environment-.list-files) files.
+definition inside it, and will use them for configuration and possible forwarding the values to containers via their respective [`env.list`](#environment-list-files) files.
 
 | Environment variable   | Default value            | Description |
 | :--------------------- | :----------------------- | :---------- |
