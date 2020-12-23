@@ -377,7 +377,7 @@ Alternatively run the command below to remove everything tied to this project.
 NB! Beware *all* docker images will be removed as well.
 The corresponding image will be rebuilt upon next start of the service (can take several minutes).
 
-    $ orbit docker clean --i-am-not-running-this-on-a-server
+    $ ./docker.sh clean --i-am-not-running-this-on-a-server
 
 If you only want to remove all *containers* tied to this project and keep the images, run the following
 
