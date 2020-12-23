@@ -1,0 +1,35 @@
+{
+    "name": "@orbit-online/docker-tools",
+    "description": "Cli tool for managing docker containers in development without using an orchestrator.",
+    "license": "Apache-2.0",
+    "version": "1.0.0",
+    "bin": {
+        "docker": "bin/docker.sh"
+    },
+    "author": {
+        "name": "Orbit Online A/S",
+        "email": "opensource@orbit.online",
+        "url": "https://github.com/orbit-online"
+    },
+    "contributors": [
+        {
+            "name": "Brian Kejlberg",
+            "email": "briankchristensen@gmail.com",
+            "url": "https://github.com/thetrompf"
+        }
+    ],
+    "keywords": [
+        "cli",
+        "command line",
+        "command-line",
+        "docker",
+        "container",
+        "development"
+    ],
+    "bugs": "https://github.com/orbit-online/docker-tools/issues/new",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/orbit-online/docker-tools"
+    },
+    "homepage": "https://github.com/orbit-online/docker-tools#readme"
+}
