@@ -8,17 +8,18 @@ for volume, environment, network and build arguments definitions.
 
 Via npm
 
-shell```
+```shell
 $ npm install --save-dev @orbit-online/docker-tools
 ```
 
 or yarn
 
-shell```
+```shell
 $ yarn add -D @orbit-online/docker-tools
 ```
 
 Now the binary script alias in package.json like this:
+
 ```json
 {
     "name": "myapp",
