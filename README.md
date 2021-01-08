@@ -29,7 +29,7 @@ Now the binary script alias in package.json like this:
 }
 ```
 
-Alternatively you could install a task runner like [@orbit-online/create-task-runner](https://github.com/orbit-online/create-task-runner) that understands node_modules binaries and makes your own local scripts / tools easily accessible, under a common unified namespace.
+Alternatively you could install a task runner like [@orbit-online/create-task-runner](https://github.com/orbit-online/task-runner) that understands node_modules binaries and makes your own local scripts / tools easily accessible, under a common unified namespace.
 
 ## Docker files
 
