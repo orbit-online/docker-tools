@@ -408,9 +408,10 @@ docker-compose has been removed.
         done
         return $exit_code
     else
-        set -x
+        local tty
+        [ -t 0 ] && tty='-it'
         # shellcheck disable=2086
-        exec docker run --rm $env_file $net_alias $volume_map $host_map $port_map \
+        exec docker run --rm $tty $env_file $net_alias $volume_map $host_map $port_map \
         --network=$DOCKER_NETWORK \
         --name "$service_name" \
         "$service_name:latest"
