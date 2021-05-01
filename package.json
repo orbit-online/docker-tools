@@ -2,7 +2,7 @@
     "name": "@orbit-online/docker-tools",
     "description": "Cli tool for managing docker containers in development without using an orchestrator.",
     "license": "Apache-2.0",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "bin": {
         "docker": "bin/docker.sh"
     },
